@@ -1,980 +1,973 @@
 cfg1_out.c: sample1.cfg ../arch/riscv32_gcc/prc_timer.cfg ../syssvc/banner.cfg ../syssvc/logtask.cfg ../syssvc/serial.cfg ../syssvc/syslog.cfg ../target/hifive1_gcc/target_serial.cfg ../target/hifive1_gcc/target_timer.cfg 
-cfg1_out.o: ../kernel/task.h ../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../arch/riscv32_gcc/prc_test.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../syssvc/banner.h ../target/hifive1_gcc/target_serial.cfg \
-	../kernel/kernel_impl.h \
-	../target/hifive1_gcc/target_syssvc.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../arch/riscv32_gcc/prc_sil.h ../kernel/kernel_rename.h \
-	../target/hifive1_gcc/target_config.h \
-	../arch/gcc/tool_stddef.h ../kernel/cyclic.h \
-	../syssvc/banner.cfg ../target/hifive1_gcc/target_unrename.h \
-	../arch/riscv32_gcc/prc_cfg1_out.h ../include/t_stddef.h \
-	../kernel/mempfix.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../target/hifive1_gcc/target_kernel.h ../syssvc/logtask.cfg \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../kernel/wait.h ../kernel/exception.h \
-	../target/hifive1_gcc/target_serial.h ../include/t_syslog.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/target_cfg1_out.h \
-	../kernel/interrupt.h ../kernel/pridataq.h \
-	../kernel/semaphore.h \
+cfg1_out.o: ../syssvc/banner.cfg ../arch/riscv32_gcc/prc_stddef.h \
+	../include/kernel.h ../target/hifive1_gcc/target_rename.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../arch/riscv32_gcc/prc_timer.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	../arch/riscv32_gcc/prc_timer.cfg \
-	../arch/riscv32_gcc/prc_unrename.h ../syssvc/syslog.cfg \
-	../include/sil.h ../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_test.h sample1.cfg \
-	../include/queue.h cfg1_out.c ../kernel/allfunc.h \
-	../target/hifive1_gcc/target_sil.h ../syssvc/serial.h \
-	../kernel/eventflag.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../kernel/alarm.h ../kernel/dataqueue.h \
+	../kernel/mailbox.h ../syssvc/serial.h \
+	../target/hifive1_gcc/target_config.h \
+	../target/hifive1_gcc/target_serial.h ../kernel/time_event.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../syssvc/serial.cfg ../arch/riscv32_gcc/prc_rename.h \
+	../kernel/eventflag.h ../kernel/kernel_int.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../target/hifive1_gcc/target_cfg1_out.h ../syssvc/logtask.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../syssvc/syslog.h ../target/hifive1_gcc/target_serial.cfg \
+	../include/t_stddef.h ../target/hifive1_gcc/sifive-fe310.h \
+	../arch/riscv32_gcc/encoding.h sample1.cfg \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_unrename.h ../include/queue.h \
+	../kernel/pridataq.h ../syssvc/logtask.cfg cfg1_out.c \
+	../target/hifive1_gcc/target_kernel.h ../kernel/dataqueue.h \
+	../kernel/alarm.h ../arch/riscv32_gcc/prc_test.h \
+	../kernel/kernel_impl.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../kernel/task.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../kernel/semaphore.h ../kernel/allfunc.h \
+	../target/hifive1_gcc/target_sil.h ../kernel/cyclic.h \
+	../syssvc/banner.h ../syssvc/syslog.cfg \
+	../target/hifive1_gcc/target_syssvc.h ../syssvc/serial.cfg \
+	../kernel/kernel_rename.h \
+	../target/hifive1_gcc/target_stddef.h ../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../kernel/interrupt.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
 	../kernel/kernel_unrename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../arch/riscv32_gcc/encoding.h ../kernel/mailbox.h \
-	../syssvc/syslog.h ../kernel/kernel_int.h \
-	../syssvc/logtask.h sample1.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../include/kernel.h ../kernel/time_event.h 
-prc_support.o: ../kernel/allfunc.h ../kernel/kernel_impl.h \
-	../include/kernel.h ../include/t_syslog.h \
-	../arch/riscv32_gcc/prc_kernel.h ../kernel/kernel_rename.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_kernel.h ./offset.h \
-	../arch/gcc/tool_stddef.h ../arch/riscv32_gcc/prc_support.S \
-	../include/t_stddef.h ../arch/riscv32_gcc/prc_sil.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../target/hifive1_gcc/target_sil.h ../include/sil.h \
-	../target/hifive1_gcc/target_config.h \
-	../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/encoding.h 
-target_config.o: ../arch/riscv32_gcc/prc_sil.h \
-	../target/hifive1_gcc/target_config.h \
-	../arch/riscv32_gcc/prc_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/riscv32_gcc/prc_unrename.h sample1.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../kernel/exception.h ../include/sil.h ../kernel/mempfix.h \
+	../kernel/wait.h ../arch/riscv32_gcc/prc_timer.cfg \
+	../arch/riscv32_gcc/prc_config.h \
+	../arch/riscv32_gcc/prc_cfg1_out.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../target/hifive1_gcc/target_test.h \
+	../arch/riscv32_gcc/prc_timer.h ../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h 
+prc_support.o: ../include/t_syslog.h ../kernel/allfunc.h \
+	../target/hifive1_gcc/target_kernel.h ../include/sil.h \
+	../include/kernel.h ../arch/riscv32_gcc/prc_kernel.h \
+	../kernel/kernel_rename.h ../arch/riscv32_gcc/prc_sil.h \
+	../include/t_stddef.h ./offset.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../arch/riscv32_gcc/prc_support.S ../kernel/kernel_impl.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../target/hifive1_gcc/target_stddef.h \
 	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/target_syssvc.h \
-	../target/hifive1_gcc/target_serial.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../target/hifive1_gcc/target_config.h \
+	../arch/riscv32_gcc/encoding.h ../arch/gcc/tool_stddef.h \
 	../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../arch/gcc/tool_stddef.h ../arch/riscv32_gcc/prc_kernel.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_config.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../target/hifive1_gcc/target_rename.h \
-	../target/hifive1_gcc/target_kernel.h ../include/kernel.h \
-	../include/t_syslog.h ../arch/riscv32_gcc/prc_rename.h \
-	../target/hifive1_gcc/target_stddef.h ../include/sil.h \
-	../kernel/kernel_impl.h ../arch/riscv32_gcc/encoding.h \
-	../kernel/allfunc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../include/t_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h 
-prc_config.o: ../arch/riscv32_gcc/encoding.h \
-	../arch/riscv32_gcc/prc_sil.h ../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../arch/riscv32_gcc/prc_config.c ../include/queue.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../kernel/allfunc.h ../kernel/time_event.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../target/hifive1_gcc/target_kernel.h ../kernel/task.h \
-	../arch/gcc/tool_stddef.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../target/hifive1_gcc/target_rename.h ../include/t_stddef.h \
-	../target/hifive1_gcc/target_config.h ../include/t_syslog.h \
-	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_config.h \
-	../include/sil.h ../include/kernel.h ../kernel/check.h \
-	../arch/riscv32_gcc/prc_rename.h 
-prc_timer.o: ../include/t_stddef.h ../arch/riscv32_gcc/prc_timer.c \
-	../include/sil.h ../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../arch/riscv32_gcc/prc_timer.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_timer.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_kernel.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../arch/gcc/tool_stddef.h \
-	../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_syssvc.h ../include/t_syslog.h \
-	../include/kernel.h ../arch/riscv32_gcc/prc_sil.h \
-	../kernel/allfunc.h ../kernel/time_event.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h 
-startup.o: ../include/sil.h ../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../target/hifive1_gcc/target_sil.h ../include/t_stddef.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../arch/gcc/tool_stddef.h ../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../arch/riscv32_gcc/prc_kernel.h ../include/t_syslog.h \
-	../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/encoding.h ../kernel/kernel_impl.h \
-	../arch/riscv32_gcc/prc_sil.h ../kernel/time_event.h \
-	../kernel/startup.c ../kernel/allfunc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h 
-task.o: /home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_config.h \
-	../arch/gcc/tool_stddef.h ../kernel/allfunc.h \
-	../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../kernel/time_event.h ../include/sil.h ../kernel/wait.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	../target/hifive1_gcc/sifive-fe310.h ../include/t_stddef.h \
-	../kernel/task.h ../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../include/t_syslog.h ../include/queue.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../kernel/task.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_stddef.h \
 	../target/hifive1_gcc/target_rename.h 
-wait.o: ../arch/riscv32_gcc/prc_config.h ../include/kernel.h \
-	../kernel/wait.h ../kernel/allfunc.h ../include/queue.h \
-	../arch/riscv32_gcc/encoding.h \
-	../arch/riscv32_gcc/prc_stddef.h \
+target_config.o: ../include/t_syslog.h ../kernel/allfunc.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../target/hifive1_gcc/target_config.h \
+	../kernel/kernel_impl.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
 	../target/hifive1_gcc/target_stddef.h \
+	../target/hifive1_gcc/target_syssvc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../target/hifive1_gcc/target_config.c \
+	../target/hifive1_gcc/target_serial.h ../include/t_stddef.h \
 	../target/hifive1_gcc/target_sil.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/riscv32_gcc/prc_sil.h ../arch/gcc/tool_stddef.h \
-	../kernel/task.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../kernel/kernel_rename.h ../arch/riscv32_gcc/prc_rename.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_config.h ../kernel/time_event.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../include/t_stddef.h ../include/t_syslog.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../kernel/kernel_impl.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../include/sil.h ../kernel/wait.c 
-time_event.o: ../arch/riscv32_gcc/prc_sil.h ../kernel/time_event.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../include/t_syslog.h ../arch/riscv32_gcc/prc_rename.h \
-	../kernel/allfunc.h ../include/t_stddef.h \
-	../kernel/kernel_rename.h ../arch/riscv32_gcc/prc_kernel.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/target_config.h ../kernel/time_event.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../kernel/kernel_impl.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../target/hifive1_gcc/target_rename.h \
-	../target/hifive1_gcc/target_sil.h ../include/sil.h \
-	../arch/gcc/tool_stddef.h ../include/kernel.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../arch/riscv32_gcc/prc_stddef.h \
 	../arch/riscv32_gcc/prc_config.h \
-	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../target/hifive1_gcc/target_stddef.h 
-task_manage.o: ../target/hifive1_gcc/target_stddef.h \
-	../kernel/wait.h ../include/kernel.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/sifive-fe310.h ../kernel/kernel_impl.h \
-	../kernel/task.h ../include/t_stddef.h \
-	../kernel/task_manage.c ../include/queue.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../arch/gcc/tool_stddef.h ../kernel/time_event.h \
-	../kernel/allfunc.h ../kernel/check.h \
-	../kernel/kernel_rename.h ../arch/riscv32_gcc/prc_config.h \
-	../arch/riscv32_gcc/encoding.h ../arch/riscv32_gcc/prc_sil.h \
-	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
 	../target/hifive1_gcc/target_rename.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../include/t_syslog.h ../target/hifive1_gcc/target_sil.h \
-	../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h 
-task_refer.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../target/hifive1_gcc/target_config.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../include/t_stddef.h ../kernel/wait.h ../include/queue.h \
-	../kernel/semaphore.h ../kernel/time_event.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../kernel/kernel_rename.h ../kernel/allfunc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../kernel/pridataq.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../include/t_syslog.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/target_stddef.h ../kernel/check.h \
-	../kernel/task.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../kernel/mempfix.h ../kernel/task_refer.c \
-	../kernel/kernel_impl.h ../kernel/dataqueue.h \
-	../target/hifive1_gcc/target_rename.h ../include/kernel.h \
-	../arch/riscv32_gcc/prc_stddef.h ../arch/gcc/tool_stddef.h \
-	../kernel/mailbox.h ../arch/riscv32_gcc/prc_rename.h \
-	../target/hifive1_gcc/target_sil.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../target/hifive1_gcc/sifive-fe310.h ../kernel/eventflag.h \
-	../arch/riscv32_gcc/prc_sil.h ../include/sil.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../arch/riscv32_gcc/prc_kernel.h 
-task_sync.o: ../kernel/task_sync.c ../arch/riscv32_gcc/prc_stddef.h \
-	../kernel/allfunc.h ../include/t_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../kernel/kernel_rename.h ../kernel/check.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../arch/riscv32_gcc/encoding.h ../kernel/time_event.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../include/queue.h ../kernel/wait.h ../include/kernel.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../kernel/kernel_impl.h ../include/sil.h \
-	../include/t_syslog.h ../arch/riscv32_gcc/prc_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../kernel/task.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../arch/gcc/tool_stddef.h ../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../target/hifive1_gcc/target_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_sil.h 
-task_except.o: ../include/sil.h ../kernel/allfunc.h \
-	../arch/riscv32_gcc/encoding.h ../include/t_stddef.h \
-	../arch/gcc/tool_stddef.h \
-	../target/hifive1_gcc/target_rename.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../kernel/task.h ../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../kernel/check.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../kernel/task_except.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../kernel/kernel_impl.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../kernel/time_event.h ../include/queue.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../arch/riscv32_gcc/prc_rename.h ../include/t_syslog.h \
-	../target/hifive1_gcc/target_sil.h 
-semaphore.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../target/hifive1_gcc/sifive-fe310.h ../include/queue.h \
-	../include/sil.h ../arch/riscv32_gcc/prc_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../kernel/wait.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_sil.h \
 	../arch/riscv32_gcc/prc_stddef.h ../include/kernel.h \
-	../include/t_stddef.h ../arch/riscv32_gcc/prc_kernel.h \
-	../kernel/allfunc.h ../kernel/semaphore.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../arch/riscv32_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	../arch/riscv32_gcc/prc_kernel.h ../kernel/kernel_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/encoding.h ../include/sil.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/sifive-fe310.h 
+prc_config.o: ../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../kernel/allfunc.h ../arch/riscv32_gcc/prc_config.c \
+	../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/riscv32_gcc/prc_sil.h ../arch/gcc/tool_stddef.h \
+	../kernel/time_event.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../kernel/task.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../target/hifive1_gcc/target_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../target/hifive1_gcc/target_sil.h \
+	../arch/riscv32_gcc/prc_kernel.h ../include/t_stddef.h \
+	../arch/riscv32_gcc/prc_stddef.h ../kernel/kernel_impl.h \
+	../kernel/check.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../include/sil.h ../target/hifive1_gcc/target_rename.h \
+	../include/queue.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../kernel/kernel_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../include/kernel.h ../include/t_syslog.h 
+prc_timer.o: ../arch/gcc/tool_stddef.h ../include/kernel.h \
+	../target/hifive1_gcc/target_sil.h \
+	../target/hifive1_gcc/target_timer.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/riscv32_gcc/prc_timer.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_syssvc.h \
+	../target/hifive1_gcc/target_stddef.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../target/hifive1_gcc/target_rename.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
 	../kernel/time_event.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../include/t_syslog.h ../arch/gcc/tool_stddef.h \
-	../kernel/check.h ../arch/riscv32_gcc/encoding.h \
-	../kernel/task.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../target/hifive1_gcc/target_rename.h ../kernel/semaphore.h \
+	../kernel/kernel_impl.h \
 	../target/hifive1_gcc/target_config.h \
-	../kernel/kernel_rename.h 
-eventflag.o: ../kernel/kernel_impl.h \
-	../target/hifive1_gcc/sifive-fe310.h ../kernel/wait.h \
-	../target/hifive1_gcc/target_sil.h ../kernel/eventflag.h \
-	../arch/riscv32_gcc/prc_config.h ../kernel/task.h \
-	../arch/riscv32_gcc/encoding.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../kernel/eventflag.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../kernel/kernel_rename.h ../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../kernel/allfunc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../arch/gcc/tool_stddef.h \
-	../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/prc_sil.h ../include/queue.h \
-	../include/sil.h ../kernel/time_event.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../kernel/check.h ../include/t_syslog.h \
-	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/target_config.h ../include/t_stddef.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h 
-dataqueue.o: ../arch/riscv32_gcc/prc_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../arch/riscv32_gcc/prc_kernel.h ../kernel/dataqueue.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../arch/riscv32_gcc/encoding.h ../kernel/task.h \
-	../target/hifive1_gcc/target_sil.h \
-	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../include/sil.h ../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../include/t_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_stddef.h ../include/queue.h \
-	../kernel/kernel_impl.h ../kernel/wait.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../target/hifive1_gcc/sifive-fe310.h \
 	../arch/riscv32_gcc/prc_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../kernel/dataqueue.c ../target/hifive1_gcc/target_rename.h \
-	../arch/gcc/tool_stddef.h ../kernel/check.h \
-	../include/t_syslog.h ../kernel/time_event.h \
-	../kernel/allfunc.h 
-pridataq.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../include/queue.h ../kernel/wait.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../include/t_syslog.h ../target/hifive1_gcc/sifive-fe310.h \
+	../include/t_stddef.h ../kernel/kernel_rename.h \
 	../arch/riscv32_gcc/prc_sil.h \
-	../target/hifive1_gcc/target_sil.h ../include/kernel.h \
-	../kernel/time_event.h ../arch/riscv32_gcc/prc_kernel.h \
+	../arch/riscv32_gcc/prc_stddef.h ../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/riscv32_gcc/prc_timer.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/sil.h 
+startup.o: ../target/hifive1_gcc/target_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../include/t_stddef.h ../kernel/time_event.h \
+	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_kernel.h \
+	../include/sil.h ../include/kernel.h \
+	../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/target_config.h ../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../target/hifive1_gcc/target_sil.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../target/hifive1_gcc/target_kernel.h ../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../arch/riscv32_gcc/prc_config.h ../kernel/kernel_rename.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/gcc/tool_stddef.h ../kernel/startup.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h 
+task.o: ../kernel/time_event.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../kernel/allfunc.h ../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../target/hifive1_gcc/target_rename.h ../kernel/task.c \
+	../kernel/kernel_impl.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../kernel/task.h ../arch/gcc/tool_stddef.h \
+	../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../target/hifive1_gcc/target_config.h \
+	../kernel/kernel_rename.h ../include/sil.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../target/hifive1_gcc/sifive-fe310.h ../include/t_syslog.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../arch/riscv32_gcc/prc_kernel.h ../include/kernel.h \
+	../include/queue.h ../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../kernel/wait.h ../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h 
+wait.o: /home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../include/kernel.h ../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../include/queue.h ../target/hifive1_gcc/target_stddef.h \
+	../kernel/task.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../target/hifive1_gcc/target_rename.h ../include/t_syslog.h \
+	../target/hifive1_gcc/sifive-fe310.h ../kernel/wait.c \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_config.h \
+	../arch/riscv32_gcc/prc_rename.h ../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../kernel/time_event.h ../kernel/wait.h \
+	../arch/riscv32_gcc/prc_config.h ../kernel/kernel_rename.h \
+	../kernel/kernel_impl.h ../include/t_stddef.h \
+	../arch/riscv32_gcc/prc_sil.h ../arch/riscv32_gcc/encoding.h \
+	../include/sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h 
+time_event.o: ../arch/riscv32_gcc/prc_config.h \
 	../arch/riscv32_gcc/encoding.h \
 	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_kernel.h ../kernel/task.h \
-	../kernel/allfunc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../target/hifive1_gcc/target_rename.h \
-	../target/hifive1_gcc/target_config.h \
-	../arch/riscv32_gcc/prc_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_rename.h ../kernel/time_event.c \
+	../target/hifive1_gcc/target_stddef.h ../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../arch/riscv32_gcc/prc_sil.h ../include/sil.h \
+	../target/hifive1_gcc/target_sil.h \
+	../target/hifive1_gcc/target_kernel.h ../include/kernel.h \
+	../kernel/kernel_rename.h ../arch/gcc/tool_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../target/hifive1_gcc/target_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../kernel/time_event.h ../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../kernel/kernel_impl.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../include/t_syslog.h 
+task_manage.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../arch/riscv32_gcc/encoding.h ../kernel/kernel_rename.h \
+	../arch/riscv32_gcc/prc_stddef.h ../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../include/queue.h ../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_rename.h \
+	../arch/riscv32_gcc/prc_sil.h ../include/sil.h \
+	../kernel/check.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../target/hifive1_gcc/sifive-fe310.h ../kernel/allfunc.h \
+	../target/hifive1_gcc/target_rename.h ../kernel/wait.h \
+	../arch/gcc/tool_stddef.h ../kernel/task.h \
+	../kernel/task_manage.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../target/hifive1_gcc/target_stddef.h ../kernel/time_event.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_config.h ../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../include/kernel.h 
+task_refer.o: ../kernel/mempfix.h ../arch/riscv32_gcc/prc_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../include/queue.h ../kernel/task.h ../kernel/task_refer.c \
+	../kernel/kernel_rename.h ../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
 	../include/sil.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../kernel/kernel_rename.h \
+	../kernel/dataqueue.h ../arch/gcc/tool_stddef.h \
+	../target/hifive1_gcc/target_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../kernel/kernel_impl.h ../include/t_syslog.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../kernel/pridataq.c ../kernel/check.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../target/hifive1_gcc/target_stddef.h ../kernel/pridataq.h \
-	../include/t_stddef.h ../arch/gcc/tool_stddef.h 
-mailbox.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../include/t_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../arch/riscv32_gcc/prc_kernel.h ../kernel/kernel_impl.h \
-	../kernel/task.h ../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../kernel/mailbox.h ../kernel/check.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../include/t_syslog.h ../kernel/time_event.h \
+	../target/hifive1_gcc/sifive-fe310.h ../include/kernel.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../include/kernel.h ../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../kernel/kernel_rename.h \
-	../target/hifive1_gcc/target_stddef.h ../include/sil.h \
-	../kernel/wait.h ../kernel/mailbox.c \
-	../target/hifive1_gcc/target_config.h ../kernel/allfunc.h \
-	../include/queue.h ../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/prc_sil.h 
-mempfix.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../kernel/time_event.h ../target/hifive1_gcc/target_stddef.h \
-	../kernel/kernel_impl.h ../include/sil.h \
-	../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../kernel/mempfix.c ../include/t_syslog.h \
-	../target/hifive1_gcc/target_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../target/hifive1_gcc/target_config.h ../kernel/wait.h \
 	../arch/riscv32_gcc/prc_sil.h \
-	../arch/riscv32_gcc/prc_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../target/hifive1_gcc/target_sil.h \
+	../target/hifive1_gcc/target_rename.h ../kernel/pridataq.h \
+	../kernel/mailbox.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../arch/riscv32_gcc/prc_config.h ../include/queue.h \
-	../kernel/mempfix.h ../include/kernel.h \
-	../include/t_stddef.h ../kernel/wait.h \
-	../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../kernel/check.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../kernel/allfunc.h ../arch/riscv32_gcc/prc_stddef.h \
+	../kernel/check.h ../kernel/semaphore.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../include/t_stddef.h ../arch/riscv32_gcc/prc_stddef.h \
+	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_config.h \
+	../kernel/time_event.h ../kernel/allfunc.h \
 	../arch/riscv32_gcc/prc_rename.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../kernel/kernel_rename.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../kernel/task.h 
-time_manage.o: ../target/hifive1_gcc/target_sil.h \
-	../include/kernel.h ../kernel/time_event.h \
+	../kernel/eventflag.h ../target/hifive1_gcc/target_kernel.h \
+	../arch/riscv32_gcc/encoding.h 
+task_sync.o: ../arch/riscv32_gcc/prc_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../target/hifive1_gcc/target_rename.h \
+	../kernel/kernel_impl.h ../kernel/wait.h \
+	../target/hifive1_gcc/target_sil.h ../kernel/allfunc.h \
+	../include/queue.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../include/t_syslog.h ../arch/gcc/tool_stddef.h \
+	../target/hifive1_gcc/target_stddef.h ../kernel/time_event.h \
+	../kernel/check.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../kernel/kernel_rename.h ../include/t_stddef.h \
+	../arch/riscv32_gcc/encoding.h ../kernel/task.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../arch/riscv32_gcc/prc_sil.h ../include/kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../kernel/task_sync.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
 	../arch/riscv32_gcc/prc_kernel.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../arch/riscv32_gcc/prc_stddef.h ../kernel/time_manage.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../target/hifive1_gcc/target_config.h ../include/sil.h 
+task_except.o: ../target/hifive1_gcc/target_sil.h \
+	../arch/riscv32_gcc/prc_config.h ../include/kernel.h \
+	../arch/riscv32_gcc/prc_sil.h ../arch/riscv32_gcc/encoding.h \
+	../kernel/task.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../include/queue.h ../include/t_stddef.h \
+	../target/hifive1_gcc/target_config.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
 	../kernel/allfunc.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../target/hifive1_gcc/target_rename.h \
+	../kernel/task_except.c ../arch/riscv32_gcc/prc_stddef.h \
+	../kernel/check.h ../kernel/time_event.h \
+	../arch/riscv32_gcc/prc_kernel.h ../kernel/kernel_rename.h \
+	../kernel/kernel_impl.h ../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
 	../target/hifive1_gcc/target_stddef.h \
-	../arch/riscv32_gcc/prc_timer.h \
-	../target/hifive1_gcc/target_syssvc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../include/t_syslog.h ../arch/gcc/tool_stddef.h \
+	../include/sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h 
+semaphore.o: ../arch/riscv32_gcc/prc_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../target/hifive1_gcc/target_stddef.h \
+	../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../kernel/kernel_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../include/t_stddef.h ../target/hifive1_gcc/sifive-fe310.h \
+	../include/sil.h ../arch/riscv32_gcc/prc_kernel.h \
+	../kernel/kernel_impl.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../arch/gcc/tool_stddef.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/queue.h ../kernel/time_event.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../arch/riscv32_gcc/prc_stddef.h ../kernel/check.h \
+	../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../kernel/task.h ../kernel/semaphore.c ../kernel/wait.h \
+	../target/hifive1_gcc/target_rename.h ../include/t_syslog.h \
+	../arch/riscv32_gcc/encoding.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../target/hifive1_gcc/target_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../include/kernel.h ../kernel/semaphore.h 
+eventflag.o: ../include/t_stddef.h ../include/t_syslog.h \
+	../target/hifive1_gcc/target_stddef.h ../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../kernel/kernel_rename.h ../include/kernel.h \
+	../kernel/wait.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../kernel/eventflag.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../kernel/task.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../kernel/time_event.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../kernel/check.h ../arch/riscv32_gcc/prc_kernel.h \
+	../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../arch/riscv32_gcc/prc_stddef.h ../arch/gcc/tool_stddef.h \
+	../target/hifive1_gcc/target_sil.h \
 	../target/hifive1_gcc/sifive-fe310.h \
+	../target/hifive1_gcc/target_rename.h \
+	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_sil.h \
+	../include/sil.h ../kernel/eventflag.c ../include/queue.h \
+	../arch/riscv32_gcc/prc_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../target/hifive1_gcc/target_config.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h 
+dataqueue.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../target/hifive1_gcc/target_config.h ../kernel/dataqueue.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/sil.h ../kernel/time_event.h ../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../include/kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../arch/riscv32_gcc/prc_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../kernel/check.h ../arch/gcc/tool_stddef.h ../kernel/task.h \
+	../target/hifive1_gcc/target_kernel.h ../kernel/wait.h \
+	../kernel/kernel_rename.h ../arch/riscv32_gcc/prc_stddef.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../target/hifive1_gcc/target_rename.h \
+	../target/hifive1_gcc/target_stddef.h ../include/t_stddef.h \
+	../kernel/dataqueue.c ../arch/riscv32_gcc/encoding.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../arch/riscv32_gcc/prc_rename.h ../include/queue.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../kernel/kernel_impl.h ../include/t_syslog.h 
+pridataq.o: ../arch/riscv32_gcc/prc_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../kernel/pridataq.c ../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../include/t_stddef.h ../kernel/pridataq.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../target/hifive1_gcc/target_stddef.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/target_config.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	../target/hifive1_gcc/target_rename.h ../include/kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../kernel/kernel_impl.h ../kernel/time_event.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../kernel/check.h ../include/queue.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../arch/riscv32_gcc/encoding.h \
+	../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../include/sil.h ../arch/gcc/tool_stddef.h \
+	../include/t_syslog.h ../kernel/allfunc.h ../kernel/task.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../kernel/kernel_rename.h ../kernel/wait.h 
+mailbox.o: ../include/sil.h ../target/hifive1_gcc/target_config.h \
+	../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_config.h ../kernel/mailbox.h \
+	../kernel/wait.h ../kernel/task.h \
+	../arch/riscv32_gcc/encoding.h ../include/queue.h \
+	../kernel/kernel_rename.h \
+	../target/hifive1_gcc/target_rename.h ../kernel/allfunc.h \
+	../include/kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
 	../arch/riscv32_gcc/prc_sil.h ../kernel/check.h \
 	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../include/t_syslog.h ../arch/riscv32_gcc/prc_config.h \
-	../include/t_stddef.h ../target/hifive1_gcc/target_config.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../target/hifive1_gcc/target_timer.h \
-	../arch/gcc/tool_stddef.h \
-	../target/hifive1_gcc/target_rename.h \
-	../kernel/kernel_rename.h ../kernel/kernel_impl.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../arch/riscv32_gcc/encoding.h 
-cyclic.o: ../kernel/kernel_impl.h ../kernel/kernel_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../target/hifive1_gcc/target_rename.h \
-	../arch/gcc/tool_stddef.h ../kernel/allfunc.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/sifive-fe310.h ../kernel/kernel_impl.h \
 	../target/hifive1_gcc/target_sil.h \
-	../arch/riscv32_gcc/prc_rename.h ../include/t_stddef.h \
-	../arch/riscv32_gcc/encoding.h \
-	../target/hifive1_gcc/sifive-fe310.h ../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../include/t_stddef.h ../kernel/mailbox.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../arch/riscv32_gcc/prc_stddef.h ../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
 	../kernel/time_event.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../kernel/check.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../target/hifive1_gcc/target_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../kernel/cyclic.c ../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_stddef.h 
+mempfix.o: ../include/sil.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../arch/riscv32_gcc/prc_stddef.h ../kernel/cyclic.h \
-	../target/hifive1_gcc/target_config.h ../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h 
-alarm.o: ../kernel/alarm.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/target_config.h \
-	../arch/riscv32_gcc/prc_stddef.h ../arch/gcc/tool_stddef.h \
-	../include/kernel.h ../kernel/check.h \
-	../target/hifive1_gcc/target_rename.h \
-	../target/hifive1_gcc/target_sil.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../kernel/allfunc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../kernel/time_event.h ../arch/riscv32_gcc/prc_kernel.h \
-	../kernel/alarm.c \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../arch/riscv32_gcc/prc_rename.h ../kernel/kernel_rename.h \
-	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../include/t_syslog.h ../kernel/kernel_impl.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
 	../arch/riscv32_gcc/prc_sil.h \
-	../target/hifive1_gcc/sifive-fe310.h ../include/t_stddef.h \
-	../arch/riscv32_gcc/prc_config.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h 
-sys_manage.o: ../target/hifive1_gcc/sifive-fe310.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../kernel/allfunc.h ../kernel/sys_manage.c \
-	../kernel/time_event.h ../include/queue.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../kernel/task.h ../target/hifive1_gcc/target_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../include/kernel.h ../arch/riscv32_gcc/prc_config.h \
-	../target/hifive1_gcc/target_sil.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../include/t_stddef.h ../kernel/kernel_impl.h \
-	../arch/riscv32_gcc/encoding.h \
 	../target/hifive1_gcc/target_config.h \
-	../kernel/kernel_rename.h ../include/t_syslog.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../include/sil.h ../target/hifive1_gcc/target_kernel.h \
-	../arch/gcc/tool_stddef.h ../kernel/check.h \
-	../arch/riscv32_gcc/prc_sil.h 
-interrupt.o: ../target/hifive1_gcc/target_sil.h \
-	../target/hifive1_gcc/target_rename.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../arch/gcc/tool_stddef.h ../kernel/time_event.h \
-	../kernel/kernel_rename.h ../kernel/allfunc.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../target/hifive1_gcc/target_config.h ../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../include/t_syslog.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../kernel/kernel_impl.h \
-	../target/hifive1_gcc/target_stddef.h ../kernel/interrupt.c \
-	../include/queue.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../kernel/task.h ../arch/riscv32_gcc/prc_sil.h \
-	../arch/riscv32_gcc/prc_rename.h \
-	../arch/riscv32_gcc/prc_config.h ../include/t_stddef.h \
-	../include/kernel.h ../kernel/check.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_kernel.h ../kernel/interrupt.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	../arch/riscv32_gcc/prc_stddef.h 
-exception.o: \
+	../kernel/wait.h ../include/t_syslog.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../kernel/kernel_rename.h ../include/t_stddef.h \
+	../target/hifive1_gcc/target_stddef.h \
+	../target/hifive1_gcc/sifive-fe310.h ../kernel/kernel_impl.h \
+	../target/hifive1_gcc/target_sil.h \
+	../arch/riscv32_gcc/encoding.h \
+	../target/hifive1_gcc/target_rename.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../include/t_stddef.h ../include/queue.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/riscv32_gcc/prc_kernel.h ../kernel/check.h \
+	../kernel/allfunc.h ../arch/gcc/tool_stddef.h \
+	../kernel/time_event.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/kernel.h ../kernel/mempfix.h ../kernel/task.h \
+	../kernel/mempfix.c ../include/queue.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	../arch/riscv32_gcc/prc_config.h 
+time_manage.o: ../kernel/time_manage.c ../kernel/kernel_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../arch/riscv32_gcc/prc_config.h \
+	../arch/riscv32_gcc/prc_timer.h \
+	../target/hifive1_gcc/target_rename.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	../arch/riscv32_gcc/encoding.h ../include/t_syslog.h \
+	../kernel/check.h ../kernel/time_event.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/gcc/tool_stddef.h \
+	../target/hifive1_gcc/target_timer.h \
+	../target/hifive1_gcc/target_syssvc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../kernel/kernel_impl.h \
+	../target/hifive1_gcc/target_stddef.h ../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_config.h ../kernel/allfunc.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../target/hifive1_gcc/target_sil.h ../include/sil.h \
+	../arch/riscv32_gcc/prc_rename.h ../include/kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h 
+cyclic.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../kernel/check.h ../target/hifive1_gcc/target_config.h \
+	../kernel/cyclic.c ../kernel/kernel_rename.h \
+	../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../target/hifive1_gcc/target_sil.h ../include/sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../kernel/cyclic.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../target/hifive1_gcc/target_rename.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../kernel/kernel_impl.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/encoding.h \
+	../arch/riscv32_gcc/prc_kernel.h ../include/kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/t_stddef.h ../arch/riscv32_gcc/prc_config.h \
+	../arch/riscv32_gcc/prc_rename.h ../kernel/time_event.h \
+	../kernel/allfunc.h ../arch/riscv32_gcc/prc_sil.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h 
+alarm.o: ../kernel/kernel_impl.h ../include/t_syslog.h \
+	../arch/riscv32_gcc/prc_sil.h ../kernel/allfunc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/gcc/tool_stddef.h ../kernel/kernel_rename.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../include/sil.h ../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../target/hifive1_gcc/target_config.h ../kernel/alarm.c \
+	../arch/riscv32_gcc/prc_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../include/t_stddef.h ../kernel/check.h ../kernel/alarm.h \
+	../target/hifive1_gcc/target_rename.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/kernel.h ../arch/riscv32_gcc/prc_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../arch/riscv32_gcc/encoding.h \
+	../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../target/hifive1_gcc/target_kernel.h ../kernel/time_event.h \
+	../arch/riscv32_gcc/prc_kernel.h 
+sys_manage.o: ../kernel/check.h \
+	../target/hifive1_gcc/target_rename.h ../include/t_syslog.h \
+	../include/queue.h ../include/sil.h ../kernel/allfunc.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
 	../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../arch/gcc/tool_stddef.h ../arch/riscv32_gcc/prc_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_config.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../arch/riscv32_gcc/prc_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/riscv32_gcc/prc_config.h \
 	../arch/riscv32_gcc/prc_kernel.h \
-	../target/hifive1_gcc/target_stddef.h ../kernel/task.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
 	../target/hifive1_gcc/target_sil.h \
+	../target/hifive1_gcc/target_config.h \
+	../arch/riscv32_gcc/prc_stddef.h ../include/t_stddef.h \
+	../target/hifive1_gcc/target_kernel.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../kernel/exception.h ../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../kernel/kernel_rename.h ../include/t_syslog.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../kernel/allfunc.h ../arch/riscv32_gcc/prc_sil.h \
-	../target/hifive1_gcc/target_rename.h ../kernel/time_event.h \
+	../kernel/kernel_impl.h ../target/hifive1_gcc/sifive-fe310.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_stddef.h \
-	../kernel/exception.c ../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_kernel.h ../include/sil.h \
-	../arch/riscv32_gcc/prc_rename.h 
-sample1.o: ../arch/gcc/tool_stddef.h \
+	../kernel/sys_manage.c ../arch/riscv32_gcc/encoding.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../syssvc/syslog.h ../include/t_stddef.h sample1.c \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../syssvc/serial.h sample1.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../target/hifive1_gcc/target_kernel.h ../include/t_syslog.h \
+	../arch/riscv32_gcc/prc_sil.h ../kernel/task.h \
+	../kernel/time_event.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/gcc/tool_stddef.h ../kernel/kernel_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../target/hifive1_gcc/target_stddef.h 
+interrupt.o: ../arch/riscv32_gcc/prc_rename.h \
+	../target/hifive1_gcc/target_config.h ../include/kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../arch/gcc/tool_stddef.h ../kernel/interrupt.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_sil.h \
+	../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../kernel/task.h ../kernel/allfunc.h \
+	../target/hifive1_gcc/target_stddef.h ../kernel/interrupt.c \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/riscv32_gcc/prc_config.h ../include/queue.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
 	../arch/riscv32_gcc/prc_kernel.h \
-	../arch/riscv32_gcc/prc_test.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../arch/riscv32_gcc/prc_stddef.h kernel_cfg.h \
+	../arch/riscv32_gcc/encoding.h ../include/sil.h \
+	../target/hifive1_gcc/target_rename.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../target/hifive1_gcc/target_sil.h ../kernel/kernel_rename.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../target/hifive1_gcc/target_test.h ../include/kernel.h \
-	../include/t_stdlib.h 
-log_output.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../kernel/check.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../kernel/time_event.h 
+exception.o: \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../kernel/kernel_rename.h ../include/kernel.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../target/hifive1_gcc/target_rename.h \
+	../kernel/kernel_impl.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../include/queue.h ../include/t_syslog.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../arch/riscv32_gcc/prc_kernel.h ../arch/gcc/tool_stddef.h \
+	../kernel/time_event.h ../kernel/exception.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../include/sil.h ../kernel/exception.c \
+	../target/hifive1_gcc/target_kernel.h \
+	../arch/riscv32_gcc/prc_rename.h ../kernel/allfunc.h \
+	../target/hifive1_gcc/target_stddef.h ../kernel/task.h \
+	../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../include/log_output.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../target/hifive1_gcc/target_config.h \
+	../arch/riscv32_gcc/encoding.h \
+	../arch/riscv32_gcc/prc_config.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../arch/riscv32_gcc/prc_stddef.h ../library/log_output.c \
-	../include/t_stddef.h 
-vasyslog.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stdarg.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../include/t_syslog.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h 
+sample1.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	kernel_cfg.h ../include/kernel.h \
+	../target/hifive1_gcc/target_test.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_test.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	sample1.h ../syssvc/syslog.h ../syssvc/serial.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../arch/gcc/tool_stddef.h \
+	../target/hifive1_gcc/target_kernel.h ../include/t_stdlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
 	../arch/riscv32_gcc/prc_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../library/vasyslog.c \
+	../include/t_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/t_syslog.h ../target/hifive1_gcc/target_stddef.h \
+	sample1.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h 
+log_output.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../target/hifive1_gcc/target_stddef.h \
+	../arch/gcc/tool_stddef.h ../library/log_output.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../include/log_output.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../include/t_syslog.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../include/t_stddef.h 
-t_perror.o: \
+	../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../include/t_stdlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h 
+vasyslog.o: \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../arch/riscv32_gcc/prc_stddef.h ../include/t_stddef.h \
-	../include/t_syslog.h ../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/gcc/tool_stddef.h ../include/t_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../library/t_perror.c 
-strerror.o: ../include/t_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../include/t_stdlib.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../include/t_syslog.h ../library/vasyslog.c \
 	../target/hifive1_gcc/target_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../arch/riscv32_gcc/prc_stddef.h ../arch/gcc/tool_stddef.h \
-	../library/strerror.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stdarg.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/riscv32_gcc/prc_stddef.h 
+t_perror.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../target/hifive1_gcc/target_stddef.h ../include/t_stdlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../include/t_syslog.h ../library/t_perror.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h 
+strerror.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../target/hifive1_gcc/target_stddef.h ../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../include/t_stdlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../library/strerror.c ../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h 
 target_serial.o: \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../include/sil.h ../include/kernel.h \
-	../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../arch/riscv32_gcc/prc_stddef.h ../include/t_stddef.h \
-	../target/hifive1_gcc/target_serial.h \
 	../arch/gcc/tool_stddef.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	../target/hifive1_gcc/target_syssvc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../arch/riscv32_gcc/encoding.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../target/hifive1_gcc/sifive-fe310.h ../include/kernel.h \
+	../target/hifive1_gcc/target_sil.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../include/t_syslog.h \
+	../arch/riscv32_gcc/prc_stddef.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
 	../target/hifive1_gcc/target_serial.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../target/hifive1_gcc/target_sil.h 
-target_inithook.o: ../include/t_stddef.h \
-	../target/hifive1_gcc/target_inithook.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../arch/riscv32_gcc/prc_sil.h ../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../target/hifive1_gcc/target_sil.h \
-	../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../target/hifive1_gcc/target_stddef.h 
-banner.o: ../target/hifive1_gcc/target_kernel.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../syssvc/banner.c ../target/hifive1_gcc/sifive-fe310.h \
-	../target/hifive1_gcc/target_syssvc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../target/hifive1_gcc/target_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../arch/gcc/tool_stddef.h ../include/kernel.h \
-	../arch/riscv32_gcc/encoding.h ../syssvc/banner.h \
-	../include/t_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../include/t_syslog.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h 
-syslog.o: ../include/t_stddef.h ../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../include/log_output.h ../arch/riscv32_gcc/prc_stddef.h \
-	../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../syssvc/syslog.h ../include/t_syslog.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../target/hifive1_gcc/target_syssvc.h \
-	../target/hifive1_gcc/target_sil.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../syssvc/syslog.c \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../target/hifive1_gcc/target_stddef.h \
-	../arch/riscv32_gcc/encoding.h 
-serial.o: \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../arch/riscv32_gcc/prc_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	./kernel_cfg.h ../include/t_syslog.h \
-	../target/hifive1_gcc/target_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../arch/riscv32_gcc/prc_stddef.h ../include/sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../syssvc/serial.c ../target/hifive1_gcc/sifive-fe310.h \
-	../include/t_stddef.h ../target/hifive1_gcc/target_sil.h \
-	../target/hifive1_gcc/target_serial.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
 	../target/hifive1_gcc/target_kernel.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../target/hifive1_gcc/target_syssvc.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/risc-v/asp/target/hifive1_gcc/target_syscalls.h \
+	../include/sil.h ../target/hifive1_gcc/target_serial.h \
+	../include/t_stddef.h ../arch/riscv32_gcc/encoding.h \
+	../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/risc-v/asp/target/hifive1_gcc/target_clib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h 
+target_inithook.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../target/hifive1_gcc/sifive-fe310.h ../include/sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/target_inithook.c \
+	../target/hifive1_gcc/target_stddef.h \
+	../target/hifive1_gcc/target_sil.h 
+banner.o: ../target/hifive1_gcc/target_stddef.h \
+	../include/t_syslog.h ../include/t_stddef.h \
+	../target/hifive1_gcc/target_sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../include/sil.h ../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../target/hifive1_gcc/target_kernel.h ../syssvc/banner.c \
+	../syssvc/banner.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../include/kernel.h ../target/hifive1_gcc/target_syssvc.h \
+	../arch/riscv32_gcc/prc_sil.h 
+syslog.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../target/hifive1_gcc/target_stddef.h \
+	../arch/riscv32_gcc/encoding.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../include/log_output.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../target/hifive1_gcc/target_syssvc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../syssvc/syslog.c \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../include/sil.h ../include/t_stddef.h ../syssvc/syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	../arch/riscv32_gcc/prc_stddef.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../target/hifive1_gcc/target_sil.h ../include/t_syslog.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h 
+serial.o: ../include/t_stddef.h \
+	../target/hifive1_gcc/target_kernel.h ../syssvc/serial.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	../arch/gcc/tool_stddef.h \
+	../target/hifive1_gcc/target_serial.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../target/hifive1_gcc/target_sil.h \
+	../target/hifive1_gcc/target_stddef.h ../include/kernel.h \
+	./kernel_cfg.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../include/t_syslog.h ../target/hifive1_gcc/target_syssvc.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
 	../arch/riscv32_gcc/encoding.h ../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../include/sil.h ../arch/riscv32_gcc/prc_stddef.h \
+	../syssvc/serial.c 
+logtask.o: \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../include/log_output.h ../syssvc/logtask.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../syssvc/syslog.h ../syssvc/serial.h \
+	../target/hifive1_gcc/target_syssvc.h ../include/t_stddef.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
 	../include/kernel.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../target/hifive1_gcc/target_syssvc.h ../syssvc/serial.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h 
-logtask.o: ../target/hifive1_gcc/target_kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../syssvc/logtask.c ../target/hifive1_gcc/target_syssvc.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	../syssvc/logtask.h ../arch/gcc/tool_stddef.h \
-	../include/sil.h ../include/t_syslog.h \
 	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
-	../target/hifive1_gcc/sifive-fe310.h \
-	../arch/riscv32_gcc/prc_sil.h ../syssvc/syslog.h \
-	../include/log_output.h ../arch/riscv32_gcc/prc_kernel.h \
-	../target/hifive1_gcc/target_sil.h ../include/kernel.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	../arch/riscv32_gcc/encoding.h \
-	../target/hifive1_gcc/target_stddef.h ../syssvc/serial.h \
-	../include/t_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h 
-kernel_cfg.o: ../kernel/time_event.h ../kernel/cyclic.h \
-	../target/hifive1_gcc/target_unrename.h \
-	../target/hifive1_gcc/target_kernel.h \
-	../kernel/kernel_impl.h ../arch/riscv32_gcc/prc_kernel.h \
-	../target/hifive1_gcc/sifive-fe310.h kernel_cfg.h \
-	../kernel/mailbox.h ../kernel/semaphore.h ../kernel/wait.h \
-	../arch/riscv32_gcc/prc_sil.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
-	../arch/riscv32_gcc/prc_test.h \
-	../arch/riscv32_gcc/prc_config.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
-	../target/hifive1_gcc/target_sil.h ../include/queue.h \
-	../syssvc/syslog.h ../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/prc_stddef.h ../syssvc/banner.h \
-	../target/hifive1_gcc/target_serial.h \
-	../target/hifive1_gcc/target_syssvc.h ../include/sil.h \
-	../arch/riscv32_gcc/prc_timer.h kernel_cfg.c \
-	../target/hifive1_gcc/target_config.h \
-	../target/hifive1_gcc/target_stddef.h ../syssvc/serial.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
-	../include/t_stddef.h ../arch/riscv32_gcc/encoding.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
-	../include/t_syslog.h ../kernel/allfunc.h \
-	../kernel/kernel_unrename.h \
-	../target/hifive1_gcc/target_test.h ../kernel/interrupt.h \
-	../arch/gcc/tool_stddef.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
-	../kernel/eventflag.h ../kernel/task.h ../kernel/dataqueue.h \
-	../include/kernel.h ../kernel/exception.h sample1.h \
-	../kernel/kernel_int.h ../kernel/mempfix.h \
-	../arch/riscv32_gcc/prc_rename.h ../kernel/pridataq.h \
-	../kernel/kernel_rename.h ../arch/riscv32_gcc/prc_unrename.h \
-	../kernel/alarm.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
-	../syssvc/logtask.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
-	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h 
-start.o: ../include/t_stddef.h ../arch/riscv32_gcc/prc_rename.h \
-	../include/kernel.h ../arch/riscv32_gcc/prc_sil.h \
-	../arch/gcc/tool_stddef.h ../include/t_syslog.h \
-	../target/hifive1_gcc/target_kernel.h ../kernel/allfunc.h \
+	../syssvc/logtask.c ../arch/riscv32_gcc/encoding.h \
+	../target/hifive1_gcc/target_sil.h ../include/t_syslog.h \
+	../arch/riscv32_gcc/prc_kernel.h \
 	../target/hifive1_gcc/target_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../arch/riscv32_gcc/prc_stddef.h ../include/sil.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	../arch/riscv32_gcc/prc_sil.h \
+	../target/hifive1_gcc/sifive-fe310.h \
+	../target/hifive1_gcc/target_kernel.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h 
+kernel_cfg.o: ../arch/riscv32_gcc/prc_rename.h ../include/queue.h \
+	../kernel/task.h ../arch/riscv32_gcc/prc_sil.h \
+	../arch/riscv32_gcc/prc_test.h \
+	../target/hifive1_gcc/target_test.h ../kernel/kernel_impl.h \
+	../include/kernel.h ../target/hifive1_gcc/target_syssvc.h \
+	../kernel/mailbox.h ../target/hifive1_gcc/target_unrename.h \
+	../kernel/mempfix.h ../kernel/kernel_rename.h \
+	../arch/gcc/tool_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/machine/_default_types.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include/stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/features.h \
+	../arch/riscv32_gcc/prc_unrename.h sample1.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/newlib.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/cdefs.h \
+	../kernel/wait.h ../kernel/allfunc.h ../syssvc/syslog.h \
+	../target/hifive1_gcc/target_config.h kernel_cfg.c \
+	../target/hifive1_gcc/sifive-fe310.h kernel_cfg.h \
+	../target/hifive1_gcc/target_kernel.h \
+	../arch/riscv32_gcc/prc_config.h ../syssvc/banner.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/limits.h \
+	../arch/riscv32_gcc/prc_kernel.h ../kernel/pridataq.h \
+	../syssvc/serial.h ../include/t_stddef.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/sys/syslimits.h \
+	../kernel/kernel_unrename.h ../kernel/alarm.h \
+	../kernel/semaphore.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/syslimits.h \
+	../target/hifive1_gcc/target_stddef.h ../kernel/cyclic.h \
+	../target/hifive1_gcc/target_rename.h ../kernel/interrupt.h \
+	../kernel/dataqueue.h ../arch/riscv32_gcc/encoding.h \
+	../include/sil.h ../kernel/time_event.h \
 	../target/hifive1_gcc/target_sil.h \
-	../arch/riscv32_gcc/prc_kernel.h ../kernel/kernel_rename.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/lib/gcc/riscv32-hifive1-elf/8.3.0/include-fixed/limits.h \
+	../arch/riscv32_gcc/prc_timer.h ../include/t_syslog.h \
+	../target/hifive1_gcc/target_serial.h ../kernel/eventflag.h \
+	../arch/riscv32_gcc/prc_stddef.h ../kernel/exception.h \
+	../syssvc/logtask.h \
+	/home/suga/x-tools/riscv32-hifive1-elf/riscv32-hifive1-elf/sys-include/_newlib_version.h \
+	../kernel/kernel_int.h 
+start.o: ../arch/riscv32_gcc/prc_sil.h ../include/kernel.h \
+	../target/hifive1_gcc/target_stddef.h \
+	../kernel/kernel_rename.h ../kernel/kernel_impl.h \
+	../kernel/allfunc.h ../target/hifive1_gcc/target_sil.h \
+	../arch/riscv32_gcc/prc_rename.h ../include/t_stddef.h \
+	../arch/riscv32_gcc/start.S ../arch/riscv32_gcc/prc_config.h \
+	../include/t_syslog.h ../arch/riscv32_gcc/prc_stddef.h \
+	../include/sil.h ../arch/gcc/tool_stddef.h \
+	../arch/riscv32_gcc/prc_kernel.h \
+	../target/hifive1_gcc/target_config.h \
 	../arch/riscv32_gcc/encoding.h \
 	../target/hifive1_gcc/target_rename.h \
-	../arch/riscv32_gcc/prc_stddef.h \
-	../target/hifive1_gcc/target_config.h \
-	../arch/riscv32_gcc/prc_config.h ../arch/riscv32_gcc/start.S \
-	../include/sil.h ../target/hifive1_gcc/sifive-fe310.h \
-	../kernel/kernel_impl.h 
+	../target/hifive1_gcc/sifive-fe310.h \
+	../target/hifive1_gcc/target_kernel.h 

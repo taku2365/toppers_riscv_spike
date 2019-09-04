@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cstdio": "c",
+        "target_clib.h": "c",
+        "target_syscalls.h": "c"
+    }
+}

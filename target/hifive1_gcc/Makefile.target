@@ -24,7 +24,7 @@ KERNEL_COBJS := $(KERNEL_COBJS) target_config.o
 #
 #  システムサービスに関する定義
 #
-SYSSVC_COBJS := $(SYSSVC_COBJS) target_serial.o target_inithook.o
+SYSSVC_COBJS := $(SYSSVC_COBJS) target_serial.o target_clib.o target_syscalls.o
 
 #
 #  トレースログ記録のサンプルコードに関する定義
